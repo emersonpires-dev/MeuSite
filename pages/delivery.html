@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App5M Delivery - Plataforma de Delivery Completa</title>
+    <meta name="description" content="Conheça o App5M Delivery, plataforma completa para delivery com app para Android, iOS e painel administrativo web.">
+    <meta name="keywords" content="app5m delivery, delivery app, aplicativo delivery, sistema delivery, porto alegre">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTUwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSIxMCIgeT0iMjgiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSJib2xkIj5BcHA1TTwvdGV4dD4KPC9zdmc+" alt="App5M Logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="delivery.html">App5M Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cases.html">Cases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="margin-top: 80px;">
+        <!-- Hero Section -->
+        <section class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold text-white mb-4">App5M Delivery</h1>
+                        <p class="lead text-white mb-4">Tenha seu estabelecimento no smartphone de todos os seus clientes</p>
+                        <h5 class="text-white mb-4">Disponível para Android, iOS e Site</h5>
+                        <div class="hero-buttons">
+                            <a href="http://www.app5mdelivery.com.br/" class="btn btn-primary btn-lg me-3" target="_blank">Acessar Plataforma</a>
+                            <a href="#features" class="btn btn-outline-light btn-lg">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="delivery-hero-visual">
+                            <div class="delivery-devices">
+                                <div class="device-icon">
+                                    <i class="fas fa-mobile-alt fa-4x text-white"></i>
+                                    <span>App Mobile</span>
+                                </div>
+                                <div class="device-icon">
+                                    <i class="fas fa-laptop fa-4x text-white"></i>
+                                    <span>Painel Web</span>
+                                </div>
+                                <div class="device-icon">
+                                    <i class="fas fa-motorcycle fa-4x text-white"></i>
+                                    <span>Delivery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Screenshots Section -->
+        <section id="features" class="screenshots-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Funcionalidades do App</h2>
+                
+                <!-- Image Slider -->
+                <div class="delivery-slider mb-5">
+                    <div class="slider-container">
+                        <div class="slider-nav">
+                            <button class="slider-btn prev-btn" onclick="changeSlide(-1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="slider-btn next-btn" onclick="changeSlide(1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="slider-track" id="sliderTrack">
+                            <div class="slide active">
+                                <div class="delivery-screenshot">
+                                    <i class="fas fa-utensils fa-5x text-primary mb-3"></i>
+                                    <h4>Cardápio App5M Delivery</h4>
+                                    <p>Cardápio completo organizado por categorias</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="delivery-screenshot">
+                                    <i class="fas fa-user fa-5x text-primary mb-3"></i>
+                                    <h4>Login App5M Delivery</h4>
+                                    <p>Sistema de login seguro para clientes</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="delivery-screenshot">
+                                    <i class="fas fa-user-plus fa-5x text-primary mb-3"></i>
+                                    <h4>Cadastre-se App5M Delivery</h4>
+                                    <p>Cadastro rápido e fácil para novos usuários</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="delivery-screenshot">
+                                    <i class="fas fa-hamburger fa-5x text-primary mb-3"></i>
+                                    <h4>Lista de Lanches App5M Delivery</h4>
+                                    <p>Produtos com descrição detalhada e preços</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="delivery-screenshot">
+                                    <i class="fas fa-minus-circle fa-5x text-primary mb-3"></i>
+                                    <h4>Remover Ingredientes</h4>
+                                    <p>Personalize seus pedidos removendo ingredientes</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="delivery-screenshot">
+                                    <i class="fas fa-plus-circle fa-5x text-primary mb-3"></i>
+                                    <h4>Adicionar Ingredientes</h4>
+                                    <p>Adicione ingredientes extras aos seus lanches</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="delivery-screenshot">
+                                    <i class="fas fa-shopping-cart fa-5x text-primary mb-3"></i>
+                                    <h4>Carrinho de Compras</h4>
+                                    <p>Revise seus pedidos antes de finalizar</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="delivery-screenshot">
+                                    <i class="fas fa-map-marker-alt fa-5x text-primary mb-3"></i>
+                                    <h4>Endereços para Entrega</h4>
+                                    <p>Gerencie múltiplos endereços de entrega</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="delivery-screenshot">
+                                    <i class="fas fa-credit-card fa-5x text-primary mb-3"></i>
+                                    <h4>Formas de Pagamento</h4>
+                                    <p>Múltiplas opções de pagamento disponíveis</p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="delivery-screenshot">
+                                    <i class="fas fa-edit fa-5x text-primary mb-3"></i>
+                                    <h4>Editar Dados</h4>
+                                    <p>Atualize suas informações pessoais</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="feature-section">
+                            <h4 class="mb-4">Funcionalidades para o Cliente</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check text-success"></i> Login, Cadastro e Recuperar Senha</li>
+                                <li><i class="fas fa-check text-success"></i> Lista Completa do Cardápio separado por categorias</li>
+                                <li><i class="fas fa-check text-success"></i> Remover ingredientes individualmente em cada lanche</li>
+                                <li><i class="fas fa-check text-success"></i> Adição de ingredientes adicionais</li>
+                                <li><i class="fas fa-check text-success"></i> Cadastramento de endereços para entrega</li>
+                                <li><i class="fas fa-check text-success"></i> Edição completa do perfil</li>
+                                <li><i class="fas fa-check text-success"></i> Carrinho de Compras com lanches selecionados</li>
+                                <li><i class="fas fa-check text-success"></i> Histórico de pedidos</li>
+                                <li><i class="fas fa-check text-success"></i> Acompanhamento de pedidos em tempo real</li>
+                                <li><i class="fas fa-check text-success"></i> Avaliação de produtos e serviços</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feature-section">
+                            <h4 class="mb-4">Funcionalidades para o Administrador</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check text-success"></i> Gerenciamento completo de categorias</li>
+                                <li><i class="fas fa-check text-success"></i> Adição, edição e remoção de lanches</li>
+                                <li><i class="fas fa-check text-success"></i> Adição, edição e remoção de ingredientes</li>
+                                <li><i class="fas fa-check text-success"></i> Gerenciamento no cadastro de usuários</li>
+                                <li><i class="fas fa-check text-success"></i> Acompanhamento de pedidos em tempo real</li>
+                                <li><i class="fas fa-check text-success"></i> Cadastro de bairros e taxas de tele-entrega</li>
+                                <li><i class="fas fa-check text-success"></i> Gerenciamento nas formas de pagamento</li>
+                                <li><i class="fas fa-check text-success"></i> Relatórios de vendas e estatísticas</li>
+                                <li><i class="fas fa-check text-success"></i> Controle de estoque</li>
+                                <li><i class="fas fa-check text-success"></i> Gestão de promoções e cupons</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Panel Section -->
+        <section class="admin-panel-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Painel Administrativo</h2>
+                <p class="text-center mb-5">Gerencie seu negócio com total controle através do nosso painel administrativo</p>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="admin-feature-card">
+                            <div class="admin-screenshot">
+                                <i class="fas fa-sign-in-alt fa-4x text-primary mb-3"></i>
+                                <h5>Tela de Login</h5>
+                                <p>Acesso seguro ao painel administrativo</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="admin-feature-card">
+                            <div class="admin-screenshot">
+                                <i class="fas fa-list fa-4x text-primary mb-3"></i>
+                                <h5>Lista de Categorias</h5>
+                                <p>Organize seus produtos por categorias</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="admin-feature-card">
+                            <div class="admin-screenshot">
+                                <i class="fas fa-utensils fa-4x text-primary mb-3"></i>
+                                <h5>Lista do Cardápio</h5>
+                                <p>Gerencie todos os produtos do seu cardápio</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="admin-feature-card">
+                            <div class="admin-screenshot">
+                                <i class="fas fa-pepper-hot fa-4x text-primary mb-3"></i>
+                                <h5>Ingredientes</h5>
+                                <p>Controle completo dos ingredientes</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="admin-feature-card">
+                            <div class="admin-screenshot">
+                                <i class="fas fa-plus-circle fa-4x text-primary mb-3"></i>
+                                <h5>Ingredientes Adicionais</h5>
+                                <p>Gerencie opcionais e adicionais</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="admin-feature-card">
+                            <div class="admin-screenshot">
+                                <i class="fas fa-users fa-4x text-primary mb-3"></i>
+                                <h5>Cadastro de Clientes</h5>
+                                <p>Gerencie a base de clientes</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="admin-feature-card">
+                            <div class="admin-screenshot">
+                                <i class="fas fa-map-marked-alt fa-4x text-primary mb-3"></i>
+                                <h5>Bairros e Taxas</h5>
+                                <p>Configure áreas de entrega e taxas</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="admin-feature-card">
+                            <div class="admin-screenshot">
+                                <i class="fas fa-receipt fa-4x text-primary mb-3"></i>
+                                <h5>Detalhes do Pedido</h5>
+                                <p>Visualize detalhes completos dos pedidos</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="admin-feature-card">
+                            <div class="admin-screenshot">
+                                <i class="fas fa-user-shield fa-4x text-primary mb-3"></i>
+                                <h5>Administradores</h5>
+                                <p>Gerencie usuários administradores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section class="technology-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Tecnologia e Plataformas</h2>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fab fa-android fa-3x"></i>
+                            </div>
+                            <h4>Android</h4>
+                            <p>Aplicativo nativo para Android disponível na Google Play Store</p>
+                            <ul class="tech-features">
+                                <li>Interface nativa Android</li>
+                                <li>Notificações push</li>
+                                <li>Integração com GPS</li>
+                                <li>Suporte offline</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fab fa-apple fa-3x"></i>
+                            </div>
+                            <h4>iOS</h4>
+                            <p>Aplicativo nativo para iOS disponível na App Store</p>
+                            <ul class="tech-features">
+                                <li>Interface nativa iOS</li>
+                                <li>Notificações push</li>
+                                <li>Integração com Apple Pay</li>
+                                <li>Suporte a Touch ID</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fas fa-globe fa-3x"></i>
+                            </div>
+                            <h4>Web</h4>
+                            <p>Versão web responsiva acessível de qualquer dispositivo</p>
+                            <ul class="tech-features">
+                                <li>Design responsivo</li>
+                                <li>PWA (Progressive Web App)</li>
+                                <li>Compatível com todos os navegadores</li>
+                                <li>Instalação no smartphone</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Planos e Preços</h2>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h4>Plano Básico</h4>
+                                <div class="price">
+                                    <span class="currency">R$</span>
+                                    <span class="amount">299</span>
+                                    <span class="period">/mês</span>
+                                </div>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check text-success"></i> App Android e iOS</li>
+                                <li><i class="fas fa-check text-success"></i> Até 50 produtos</li>
+                                <li><i class="fas fa-check text-success"></i> Painel administrativo</li>
+                                <li><i class="fas fa-check text-success"></i> Suporte básico</li>
+                                <li><i class="fas fa-times text-danger"></i> Relatórios avançados</li>
+                                <li><i class="fas fa-times text-danger"></i> Integração com marketplaces</li>
+                            </ul>
+                            <button class="btn btn-outline-primary btn-block">Escolher Plano</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-card featured">
+                            <div class="pricing-header">
+                                <h4>Plano Profissional</h4>
+                                <div class="price">
+                                    <span class="currency">R$</span>
+                                    <span class="amount">599</span>
+                                    <span class="period">/mês</span>
+                                </div>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check text-success"></i> App Android e iOS</li>
+                                <li><i class="fas fa-check text-success"></i> Produtos ilimitados</li>
+                                <li><i class="fas fa-check text-success"></i> Painel administrativo</li>
+                                <li><i class="fas fa-check text-success"></i> Suporte prioritário</li>
+                                <li><i class="fas fa-check text-success"></i> Relatórios avançados</li>
+                                <li><i class="fas fa-check text-success"></i> Integração com marketplaces</li>
+                            </ul>
+                            <button class="btn btn-primary btn-block">Escolher Plano</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h4>Plano Enterprise</h4>
+                                <div class="price">
+                                    <span class="currency">R$</span>
+                                    <span class="amount">999</span>
+                                    <span class="period">/mês</span>
+                                </div>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check text-success"></i> App Android e iOS</li>
+                                <li><i class="fas fa-check text-success"></i> Produtos ilimitados</li>
+                                <li><i class="fas fa-check text-success"></i> Painel administrativo</li>
+                                <li><i class="fas fa-check text-success"></i> Suporte 24/7</li>
+                                <li><i class="fas fa-check text-success"></i> Relatórios avançados</li>
+                                <li><i class="fas fa-check text-success"></i> Integração com marketplaces</li>
+                                <li><i class="fas fa-check text-success"></i> Customizações exclusivas</li>
+                            </ul>
+                            <button class="btn btn-outline-primary btn-block">Escolher Plano</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mb-4">Pronto para revolucionar seu delivery?</h2>
+                        <p class="lead mb-4">Entre em contato conosco e comece a vender mais com o App5M Delivery.</p>
+                        <div class="cta-buttons">
+                            <a href="../index.html#contact" class="btn btn-primary btn-lg me-3">Solicitar Demonstração</a>
+                            <a href="http://www.app5mdelivery.com.br/" class="btn btn-outline-light btn-lg" target="_blank">Visitar Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 App5M - Desenvolvimento de Aplicativos. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="../index.html#contact" class="text-light me-3">Contato</a>
+                    <a href="../index.html" class="text-light">Início</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/slider.js"></script>
+
+    <style>
+        .delivery-hero-visual {
+            position: relative;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .delivery-devices {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        .device-icon {
+            text-align: center;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .device-icon:nth-child(1) { animation-delay: 0s; }
+        .device-icon:nth-child(2) { animation-delay: 0.5s; }
+        .device-icon:nth-child(3) { animation-delay: 1s; }
+
+        .device-icon span {
+            display: block;
+            margin-top: 10px;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .admin-feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .admin-feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .admin-screenshot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+        }
+
+        .tech-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tech-icon {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .tech-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .tech-features li {
+            padding: 5px 0;
+            color: var(--secondary-color);
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .pricing-card.featured {
+            border: 3px solid var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        .pricing-header {
+            margin-bottom: 30px;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 20px 0;
+        }
+
+        .currency {
+            font-size: 1.5rem;
+            vertical-align: top;
+        }
+
+        .period {
+            font-size: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+
+        .pricing-features li {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-block {
+            width: 100%;
+        }
+
+        .cta-section {
+            background: var(--gradient-primary);
+            color: white;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-outline-light {
+            border-color: white;
+            color: white;
+        }
+
+        .btn-outline-light:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .delivery-devices {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .device-icon {
+                margin-bottom: 20px;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,566 @@
+/* Responsive Design */
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+    
+    .service-card {
+        padding: 40px;
+    }
+}
+
+/* Large Devices (992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    
+    .service-card {
+        padding: 35px;
+    }
+}
+
+/* Medium Devices (768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-animation {
+        height: 300px;
+        margin-top: 40px;
+    }
+    
+    .service-card {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .platform-list {
+        justify-content: center;
+    }
+    
+    .platform-item {
+        flex: 0 0 auto;
+    }
+    
+    .contact-info {
+        margin-top: 40px;
+    }
+    
+    .delivery-screenshot {
+        height: 300px;
+        padding: 30px;
+    }
+}
+
+/* Small Devices (576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .navbar-brand img {
+        height: 35px;
+    }
+    
+    .hero-section {
+        padding: 40px 0;
+        text-align: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.1rem;
+    }
+    
+    .hero-animation {
+        height: 250px;
+        margin-top: 30px;
+    }
+    
+    .floating-icon {
+        font-size: 2rem;
+    }
+    
+    .service-card {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+    
+    .about-section,
+    .services-section,
+    .delivery-section,
+    .cases-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+    
+    .platform-list {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .platform-item {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .question-card {
+        padding: 20px;
+    }
+    
+    .delivery-screenshot {
+        height: 250px;
+        padding: 25px;
+    }
+    
+    .delivery-screenshot i {
+        font-size: 3rem;
+    }
+    
+    .feature-section {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .case-card {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-form,
+    .contact-info {
+        padding: 30px;
+    }
+    
+    .contact-info {
+        margin-top: 30px;
+    }
+    
+    .contact-item {
+        margin-bottom: 25px;
+    }
+    
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Extra Small Devices (Less than 576px) */
+@media (max-width: 575px) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .navbar-brand img {
+        height: 30px;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .hero-section {
+        padding: 30px 0;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero-section .lead {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-section h5 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-animation {
+        height: 200px;
+        margin-top: 20px;
+    }
+    
+    .floating-icon {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        margin: 5px;
+        display: block;
+        width: 100%;
+    }
+    
+    .btn-lg {
+        padding: 12px 25px;
+    }
+    
+    .service-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .service-card h4 {
+        font-size: 1.2rem;
+    }
+    
+    .about-section,
+    .services-section,
+    .delivery-section,
+    .cases-section,
+    .contact-section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .platform-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .platform-item {
+        justify-content: center;
+        padding: 10px 15px;
+    }
+    
+    .platform-item i {
+        font-size: 1.2rem;
+    }
+    
+    .question-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .question-card h5 {
+        font-size: 1.1rem;
+    }
+    
+    .delivery-slider {
+        margin: 0 -15px;
+    }
+    
+    .delivery-screenshot {
+        height: 200px;
+        padding: 20px;
+    }
+    
+    .delivery-screenshot i {
+        font-size: 2.5rem;
+    }
+    
+    .delivery-screenshot h4 {
+        font-size: 1.1rem;
+    }
+    
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .prev-btn {
+        left: 10px;
+    }
+    
+    .next-btn {
+        right: 10px;
+    }
+    
+    .feature-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .feature-section h4 {
+        font-size: 1.2rem;
+    }
+    
+    .feature-list li {
+        padding: 8px 0;
+        font-size: 0.9rem;
+    }
+    
+    .case-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .case-video h5 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-form,
+    .contact-info {
+        padding: 20px;
+    }
+    
+    .contact-info {
+        margin-top: 20px;
+    }
+    
+    .contact-item {
+        margin-bottom: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .contact-item i {
+        font-size: 1.2rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .social-link {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .form-control {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    
+    .form-label {
+        font-size: 0.9rem;
+    }
+    
+    .footer {
+        text-align: center;
+    }
+    
+    .footer .row > div {
+        margin-bottom: 15px;
+    }
+    
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+    .hero-section {
+        padding: 20px 0;
+        min-height: 100vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.6rem;
+    }
+    
+    .hero-animation {
+        height: 150px;
+    }
+    
+    .floating-icon {
+        font-size: 1.2rem;
+    }
+    
+    .services-section,
+    .about-section,
+    .delivery-section,
+    .cases-section,
+    .contact-section {
+        padding: 30px 0;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .hero-animation,
+    .slider-nav,
+    .social-links,
+    .scroll-to-top,
+    .btn {
+        display: none !important;
+    }
+    
+    .hero-section {
+        background: none !important;
+        color: black !important;
+    }
+    
+    .service-card,
+    .case-card,
+    .contact-form,
+    .contact-info {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: underline !important;
+    }
+    
+    .text-white {
+        color: black !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #0056b3;
+        --secondary-color: #495057;
+        --light-color: #e9ecef;
+        --dark-color: #212529;
+        --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .service-card,
+    .case-card,
+    .contact-form,
+    .contact-info {
+        border: 2px solid var(--dark-color);
+    }
+    
+    .btn {
+        border: 2px solid var(--dark-color);
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .floating-icon {
+        animation: none !important;
+    }
+    
+    .service-animation i {
+        animation: none !important;
+    }
+    
+    .scroll-behavior {
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light-color: #2d3436;
+        --white: #1a1a1a;
+        --dark-color: #ddd;
+        --secondary-color: #b2bec3;
+    }
+    
+    body {
+        background-color: var(--white);
+        color: var(--dark-color);
+    }
+    
+    .service-card,
+    .case-card,
+    .contact-form,
+    .contact-info,
+    .question-card,
+    .feature-section {
+        background-color: #2d3436;
+        color: var(--dark-color);
+    }
+    
+    .form-control {
+        background-color: #2d3436;
+        color: var(--dark-color);
+        border-color: #636e72;
+    }
+    
+    .form-control:focus {
+        background-color: #2d3436;
+        color: var(--dark-color);
+    }
+}
+
+/* Accessibility Improvements */
+@media (max-width: 767px) {
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 15px 0;
+    }
+    
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .social-link {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .slider-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .form-control {
+        min-height: 44px;
+    }
+}
+
+/* Hover Effects for Touch Devices */
+@media (hover: none) {
+    .service-card:hover,
+    .case-card:hover,
+    .btn:hover,
+    .social-link:hover {
+        transform: none;
+    }
+}

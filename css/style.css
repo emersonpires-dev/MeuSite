@@ -37,14 +37,14 @@ html {
 
 /* Navigation */
 .navbar {
-    background: rgba(0, 0, 0, 0.9) !important;
+    background: rgba(16 26 79 / 0.95) !important;
     backdrop-filter: blur(10px);
     transition: var(--transition);
     padding: 1rem 0;
 }
 
 .navbar.scrolled {
-    background: rgba(0, 0, 0, 0.95) !important;
+    background: rgba(158, 161, 179, 0.95) !important;
     box-shadow: var(--box-shadow);
 }
 
@@ -54,11 +54,16 @@ html {
 }
 
 .navbar-nav .nav-link {
-    color: var(--white) !important;
+    color: var(#FFFFFF) !important;
     font-weight: 500;
     margin: 0 10px;
     transition: var(--transition);
     position: relative;
+}
+
+.navbar.scrolled .navbar-nav .nav-link {
+    /* Letras PRETAS apenas no estado de rolagem */
+    color: #000000 !important;
 }
 
 .navbar-nav .nav-link::after {
@@ -466,8 +471,8 @@ html {
 
 /* Footer */
 .footer {
-    background: var(--dark-color);
-    color: var(--white);
+    /*background: var(16 26 79 / 0.95); */
+    color: var(--dark-color);
 }
 
 .footer a {

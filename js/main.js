@@ -110,15 +110,24 @@ function initAnimations() {
         });
     });
     
-    // Parallax effect for hero section
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        const heroSection = document.querySelector('.hero-section');
-        if (heroSection) {
-            heroSection.style.transform = `translateY(${scrolled * 0.5}px)`;
-        }
-    });
+    // Parallax effect for hero section (Optimized with requestAnimationFrame)
+const heroSection = document.querySelector('.hero-section');
+let ticking = false;
+
+function updateHeroParallax() {
+  const scrolled = window.pageYOffset;
+  if (heroSection) {
+    heroSection.style.transform = `translateY(${scrolled * 0.5}px)`;
+  }
+  ticking = false;
 }
+
+window.addEventListener('scroll', function() {
+  if (!ticking) {
+    window.requestAnimationFrame(updateHeroParallax);
+    ticking = true;
+  }
+});
 
 // Contact form functionality
 function initContactForm() {

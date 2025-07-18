@@ -405,11 +405,11 @@ html {
 
 /* CSS para os Novos Cards de Portfólio na Página Inicial */
 
-/* Remove o padding do card para a imagem poder ir até as bordas 
+ Remove o padding do card para a imagem poder ir até as bordas 
 .cases-section .case-card {
     padding: 0;
-    overflow: hidden; / Garante que a imagem com cantos arredondados funcione 
-    background: var(--white); / Garante o fundo branco 
+    overflow: hidden; /* Garante que a imagem com cantos arredondados funcione */
+    background: var(--white); /* Garante o fundo branco */
 }
 
 .portfolio-image-container {
@@ -421,20 +421,20 @@ html {
 .portfolio-image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; / Garante que a imagem preencha o espaço sem distorcer 
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
     transition: transform 0.4s ease;
 }
 
-/ Efeito de zoom na imagem 
+/* Efeito de zoom na imagem */
 .cases-section .case-card:hover .portfolio-image-container img {
     transform: scale(1.05);
 }
 
-/ Estilo para o conteúdo de texto abaixo da imagem 
+/* Estilo para o conteúdo de texto abaixo da imagem */
 .cases-section .case-card .case-info {
     padding: 25px;
-    text-align: left; / Alinha o texto à esquerda para um look mais profissional 
-    border-top: none; / Remove a borda que existia antes 
+    text-align: left; /* Alinha o texto à esquerda para um look mais profissional */
+    border-top: none; /* Remove a borda que existia antes */ 
 }
 
 .cases-section .case-card .case-info h5 {
@@ -442,7 +442,7 @@ html {
     margin-bottom: 5px;
 }
 
-.cases-section .case-card .case-info .case-subtitle { / Nova classe para o subtítulo 
+.cases-section .case-card .case-info .case-subtitle { /* Nova classe para o subtítulo */
     font-size: 0.9rem;
     color: var(--secondary-color);
     margin-bottom: 15px;
@@ -452,7 +452,7 @@ html {
 .cases-section .case-card .case-info small {
     font-size: 0.8rem;
     color: #a0a0a0;
-} */
+}
 
 /* Contact Section */
 .contact-section {

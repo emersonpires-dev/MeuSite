@@ -339,11 +339,12 @@
     }
     
     .contact-item {
-        margin-bottom: 20px;
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
+    flex-direction: column;  /* Coloca o ícone em cima e o texto embaixo */
+    align-items: center;     /* ADICIONADO: Centraliza o ícone e o bloco de texto */
+    text-align: center;      /* Mantém o texto centralizado */
+    gap: 10px;
+    margin-bottom: 25px;     /* Aumentei um pouco a margem para separar melhor */
+}
     
     .contact-item i {
         font-size: 1.2rem;
@@ -492,7 +493,7 @@
     }
 }
 
-/* Dark Mode Support */
+/* Dark Mode Support 
 @media (prefers-color-scheme: dark) {
     :root {
         --light-color: #2d3436;
@@ -526,7 +527,7 @@
         background-color: #2d3436;
         color: var(--dark-color);
     }
-}
+} */
 
 /* Accessibility Improvements */
 @media (max-width: 767px) {
